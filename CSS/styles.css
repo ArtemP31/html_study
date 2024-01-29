@@ -7,6 +7,7 @@
   --team-background-color: #f5f4fa;
   --black-color: #000000;
   --background-color-btn: #188ce8;
+  --border-color: #ECECEC; 
 }
 
 body {
@@ -38,7 +39,7 @@ address{
   margin: 0 auto;
 }
 
-.current {
+a.current {
   color: var(--main-color);
 }
 
@@ -54,6 +55,9 @@ address{
 }
 
 .header {
+  border-bottom: 1px solid var(--border-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-wrap{
@@ -68,12 +72,10 @@ address{
   line-height: 1.1923;
   letter-spacing: 0.03em;
   color: var(--black-color);
-  padding-top: 25px;
-  padding-bottom: 25px;
+  display: block;
 }
 .logo {
   color: var(--main-color);
-  
 }
 .header-nav {
 }
@@ -100,6 +102,10 @@ address{
   line-height: 1.1428;
   letter-spacing: 0.02em;
   color: var(--first-titel-color);
+  
+  
+  padding-top: 24px;
+  padding-bottom: 30px;
 }
 
 
@@ -119,6 +125,7 @@ address{
   text-align: center;
 }
 
+
 .hero-wrap{
   display: flex;
   justify-content: center;
@@ -137,6 +144,8 @@ address{
   text-transform: uppercase;
 
   color: var(--hero-titel-color);
+  display: block;
+
 }
 .hero-button {
   font-family: "Roboto", sans-serif;
@@ -173,7 +182,7 @@ address{
   gap: 30px;
 }
 .advantage-iteam {
-  width: 100%;
+  flex-basis: calc((100% - 90px) / 4);
 }
 .advantage-iteam-title {
   font-size: 14px;
@@ -268,8 +277,8 @@ footer  .logo-link{
 }
 .footer-logo{
   color: var(--hero-titel-color);
-  padding-top: 0;
-  padding-bottom: 0;
+  display: block;
+  margin-bottom: 20px;
 }
 
 
@@ -287,7 +296,7 @@ footer  .logo-link{
 }
 
 .footer-address {
-  margin-top: 20px;
+  
   color: var(--hero-titel-color);
 }
 
@@ -298,9 +307,14 @@ footer  .logo-link{
 /* Portfolio */
 
 .portfolio {
+  padding: 94px 0;
 }
 
-.portfolio-list {
+.portfolio-list-button {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 56px;
 }
 
 .portfolio-iteam-button {
@@ -319,6 +333,7 @@ footer  .logo-link{
   border-radius: 4px;
 
   text-align: center;
+  padding: 6px 22px;
 }
 
 .portfolio-button:hover,
@@ -329,7 +344,28 @@ footer  .logo-link{
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.portfolio-list{
+  flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
 .portfolio-iteam {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-img{
+  display: block;
+  max-width: 100%;
+}
+
+.portfolio-wraper-image{
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  padding: 20px 24px;
+  border-top: 0;
 }
 
 .portfolio-titel {
@@ -337,6 +373,7 @@ footer  .logo-link{
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--first-titel-color);
+  margin-bottom: 4px;
 }
 
 .portfolio-text {
