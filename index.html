@@ -64,7 +64,9 @@
           <div class="hero-wrap">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           </div>
-          <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="advantage">
@@ -402,38 +404,53 @@
             </ul>
           </address>
         </div>
-        <div class="footer-soc">
-          <p class="footer-soc-text">приєднуйтесь</p>
-          <ul class="footer-soc-list list">
-            <li class="footer-soc-iteam">
-              <a class="footer-soc-link" href="#">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-iteam">
-              <a class="footer-soc-link" href="#">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-iteam">
-              <a class="footer-soc-link" href="#">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-iteam">
-              <a class="footer-soc-link" href="#">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-information">
+          <div>
+            <p class="footer-soc-text">приєднуйтесь</p>
+            <ul class="footer-soc-list list">
+              <li class="footer-soc-iteam">
+                <a class="footer-soc-link" href="#">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-iteam">
+                <a class="footer-soc-link" href="#">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-iteam">
+                <a class="footer-soc-link" href="#">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-iteam">
+                <a class="footer-soc-link" href="#">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-soc-text">Підпишіться на розсилку</p>
+            <form class="footer-form">
+              <input
+                type="text"
+                name="online-name"
+                placeholder="E-mail"
+                class="footer-input"
+              />
+              <button type="submit" class="footer-subscribe">
+                Підписатися</button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -444,6 +461,75 @@
             <use href="./images/icons.svg#icon-Modal-X"></use>
           </svg>
         </button>
+        <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Ім'я</label>
+            <div class="modal-wraper">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                id="user-name"
+              />
+              <svg class="modal-icon-input" width="13" height="13">
+                <use href="./images/icons.svg#icon-Modal-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-tel" class="modal-label">Телефон</label>
+            <div class="modal-wraper">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-input"
+                id="user-tel"
+              />
+              <svg class="modal-icon-input" width="13" height="13">
+                <use href="./images/icons.svg#icon-Modal-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="email" class="modal-label">Пошта</label>
+            <div class="modal-wraper">
+              <input
+                type="email"
+                name="user-email"
+                class="modal-input"
+                id="user-email"
+              />
+              <svg class="modal-icon-input" width="13" height="13">
+                <use href="./images/icons.svg#icon-Modal-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field-waper">
+            <label for="user-text" class="modal-label">Коментар</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              placeholder="Введіть текст"
+              class="modal-comment"
+            ></textarea>
+          </div>
+          <div class="modal-field-chek">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="modal-chek hide"
+            />
+            <label for="policy" class="modal-chek-text"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#">Умови договору</a>
+            </label>
+          </div>
+          <div class="modal-send">
+            <button type="submit" class="send-button">Відправити</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
