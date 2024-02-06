@@ -1,0 +1,87 @@
+.advantage {
+  padding: 94px 0;
+}
+
+.advantage-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.advantage-iteam {
+  flex-basis: calc((100% - 90px) / 4);
+  &:first-child::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--team-background-color);
+    display: flex;
+    margin-bottom: 30px;
+    background-image: url(../images/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+  
+  &:nth-child(2)::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--team-background-color);
+    display: flex;
+    margin-bottom: 30px;
+    background-image: url(../images/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+  
+  &:nth-child(3)::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--team-background-color);
+    display: flex;
+    margin-bottom: 30px;
+    background-image: url(../images/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+  
+  &:last-child::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--team-background-color);
+    display: flex;
+    margin-bottom: 30px;
+    background-image: url(../images/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+}
+
+
+
+.advantage-iteam-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--first-titel-color);
+
+  margin-bottom: 10px;
+}
+.advantage-iteam-text {
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}

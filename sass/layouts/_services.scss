@@ -1,0 +1,36 @@
+.services {
+  padding-bottom: 94px;
+}
+
+.services-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.services-iteam {
+  flex-basis: calc((100% - 60px) / 3);
+}
+.services-img {
+  display: block;
+  max-width: 100%;
+}
+
+.services-top-wraper{
+  position: relative;
+}
+
+.services-top-text{
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+  color: var(--hero-titel-color);
+  background-color: rgba(47, 48, 58, 0.800000011920929);
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 27px;
+  bottom: 0;
+  left: 0;
+}
