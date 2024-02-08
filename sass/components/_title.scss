@@ -1,9 +1,14 @@
 .title {
-    text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
-    line-height: 1.1666;
+    line-height: 1.17;
     letter-spacing: 0.03em;
-  
-    margin-bottom: 50px;
+    text-align: center;
+    color: var(--first-titel-color);
+    margin-bottom: 30px;
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        line-height: 1.1666;
+        margin-bottom: 50px;
+    }
 }

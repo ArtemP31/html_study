@@ -1,5 +1,9 @@
 .services {
   padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width:1200px) {
+    display: block;
+  }
 }
 
 .services-list {
@@ -9,10 +13,6 @@
 }
 .services-iteam {
   flex-basis: calc((100% - 60px) / 3);
-}
-.services-img {
-  display: block;
-  max-width: 100%;
 }
 
 .services-top-wraper{

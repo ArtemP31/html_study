@@ -1,15 +1,29 @@
 .clients {
-  padding: 94px 0;
+  padding: 60px 0;
+  @media screen and (min-width:1200px){
+    padding: 94px 0;
+  }
+  
 }
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  @media screen and (min-width:1200px) {
+    flex-wrap: nowrap;
+  }
+  
 }
 .clients-iteam {
   width: 170px;
   height: 92px;
+  flex-basis: calc((100% - 30px) / 2);
+  @media screen and (min-width:768px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  
 }
 .clients-link {
   width: 100%;
