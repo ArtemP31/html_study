@@ -1,69 +1,56 @@
 .advantage {
-  padding: 94px 0;
+  padding: 60px 0;
+  @media screen and (min-width:1200px){
+    padding: 94px 0;
+  }
 }
 
 .advantage-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
 
 .advantage-iteam {
-  flex-basis: calc((100% - 90px) / 4);
-  &:first-child::before {
+  &::before {
     content: "";
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     background-color: var(--team-background-color);
     display: flex;
     margin-bottom: 30px;
-    background-image: url(../images/antenna.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px 70px;
+    @media screen and (min-width:768px){
+      width: 354px;
+    }
+    @media screen and (min-width:1200px){
+      width: 270px;
+    }
+  }
+  &:first-child::before {
+    background-image: url(../images/antenna.svg);
   }
   
   &:nth-child(2)::before {
-    content: "";
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background-color: var(--team-background-color);
-    display: flex;
-    margin-bottom: 30px;
     background-image: url(../images/clock.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70px 70px;
   }
   
   &:nth-child(3)::before {
-    content: "";
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background-color: var(--team-background-color);
-    display: flex;
-    margin-bottom: 30px;
     background-image: url(../images/diagram.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70px 70px;
   }
   
   &:last-child::before {
-    content: "";
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background-color: var(--team-background-color);
-    display: flex;
-    margin-bottom: 30px;
     background-image: url(../images/astronaut.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70px 70px;
+  }
+  @media screen and (min-width:768px){
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width:1200px){
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 
@@ -75,9 +62,12 @@
   line-height: 1.1428;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--first-titel-color);
-
   margin-bottom: 10px;
+  @media screen and (min-width:768px){
+    text-align: left;
+  }
 }
 .advantage-iteam-text {
   font-size: 14px;
